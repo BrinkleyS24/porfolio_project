@@ -6,7 +6,7 @@ const cors = require("cors");
 const morgan = require("morgan");
 const app = express();
 
-const PORT = 4000
+const PORT = process.env.PORT || 4000;
 
 const projects = require("./projects.json");
 const about = require("./about.json");
